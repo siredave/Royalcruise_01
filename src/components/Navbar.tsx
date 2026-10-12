@@ -71,12 +71,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenQuote, onOpenContact }) =>
             : 'bg-white/95 backdrop-blur-md border-b border-[#E5E5DC] shadow-[0_1px_8px_rgba(0,0,0,0.04)]'
         }`}
       >
-        <div className="h-20 w-full max-w-[1280px] mx-auto px-6 flex items-center justify-between gap-4">
+        <div className="h-20 w-full max-w-[1280px] mx-auto px-3 sm:px-6 flex items-center justify-between gap-2 sm:gap-4">
           {/* Brand Logo & Name */}
-          <div className="flex items-center gap-3">
+          <div className="flex min-w-0 shrink-0 items-center gap-3">
             <button
               onClick={() => scrollTo('home')}
-              className="flex items-center gap-3 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[#236b45] rounded-lg p-1"
+              className="flex min-w-0 shrink-0 items-center gap-2 sm:gap-3 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[#236b45] rounded-lg p-1"
             >
               {/* Previous direct SVG markup retained for easy rollback:
               <img
@@ -86,9 +86,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenQuote, onOpenContact }) =>
                 loading="eager"
               /> */}
              
-              <BrandLogo className="h-9 w-auto object-contain" loading="eager" />
+              <BrandLogo className="block h-auto w-[118px] sm:w-[144px] object-contain" loading="eager" />
 
-              <span className="font-heading text-2xl font-bold text-[#17452F] tracking-tight hidden sm:inline-block">
+              <span className="hidden sm:inline-block whitespace-nowrap font-heading text-base lg:text-2xl font-bold text-[#17452F] tracking-tight">
                 Royale cruize
               </span>
               
@@ -116,7 +116,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenQuote, onOpenContact }) =>
           </nav>
 
           {/* Actions Zone */}
-          <div className="flex items-center gap-2 sm:gap-3">
+          <div className="flex shrink-0 items-center gap-1.5 sm:gap-3">
             {/* WhatsApp Direct Line */}
             <a
               href={defaultWhatsappUrl}
@@ -133,16 +133,17 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenQuote, onOpenContact }) =>
             {/* Get a Free Quote Button */}
             <button
               onClick={onOpenQuote}
-              className="inline-flex items-center justify-center px-4 py-2.5 rounded-lg bg-[#e8b323] text-[#242820] text-[15px] font-semibold shadow-sm hover:bg-[#F5D778] active:scale-[0.98] transition-all whitespace-nowrap cursor-pointer"
+              className="inline-flex items-center justify-center px-2.5 sm:px-4 py-2.5 rounded-lg bg-[#e8b323] text-[#242820] text-[12px] sm:text-[15px] font-semibold shadow-sm hover:bg-[#F5D778] active:scale-[0.98] transition-all whitespace-nowrap cursor-pointer"
             >
-              Get a Free Quote
+              <span className="sm:hidden">Quote</span>
+              <span className="hidden sm:inline">Get a Free Quote</span>
             </button>
 
             {/* Contact / Info profile button */}
             <button
               onClick={onOpenContact}
               title="Contact Royale cruize"
-              className="w-9 h-9 rounded-full bg-[#785a00] hover:bg-[#5b4300] text-white flex items-center justify-center transition-colors cursor-pointer"
+              className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-[#785a00] hover:bg-[#5b4300] text-white flex items-center justify-center transition-colors cursor-pointer"
               aria-label="Contact options"
             >
               <span className="material-symbols-outlined text-[18px]">person</span>
@@ -151,7 +152,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenQuote, onOpenContact }) =>
             {/* Mobile Hamburger Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="xl:hidden w-9 h-9 rounded-lg flex items-center justify-center text-[#242820] hover:bg-[#FAF9F4] transition-colors focus:outline-none"
+              className="xl:hidden w-8 h-8 sm:w-9 sm:h-9 rounded-lg flex items-center justify-center text-[#242820] hover:bg-[#FAF9F4] transition-colors focus:outline-none"
               aria-label="Toggle navigation menu"
             >
               <span className="material-symbols-outlined text-[24px]">
