@@ -60,7 +60,7 @@ export default function App() {
           onOpenServiceDetails={(service) => setInspectingService(service)}
         />
 
-        {/* Section 4: About Royalcruise */}
+        {/* Section 4: About Royale cruize */}
         <AboutSection />
 
         {/* Section 5: Why Choose Us */}

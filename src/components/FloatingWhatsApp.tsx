@@ -7,7 +7,7 @@ interface FloatingWhatsAppProps {
 
 export const FloatingWhatsApp: React.FC<FloatingWhatsAppProps> = ({ onScrollToQuote }) => {
   const [showQuickCard, setShowQuickCard] = useState(false);
-  const defaultWhatsappUrl = buildDirectWhatsAppUrl('Hello Royalcruise, I would like to chat with a cleaning specialist.');
+  const defaultWhatsappUrl = buildDirectWhatsAppUrl('Hello Royale cruize, I would like to chat with a cleaning specialist.');
 
   return (
     <aside className="fixed bottom-6 right-6 z-50 flex items-end flex-col gap-3">
@@ -17,7 +17,7 @@ export const FloatingWhatsApp: React.FC<FloatingWhatsAppProps> = ({ onScrollToQu
           <div className="flex items-center justify-between pb-3 border-b border-[#E5E5DC]">
             <div className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-[#236b45] animate-pulse" />
-              <span className="text-[14px] font-bold text-[#242820]">Royalcruise Support</span>
+              <span className="text-[14px] font-bold text-[#242820]">Royale cruize Support</span>
             </div>
             <button
               onClick={() => setShowQuickCard(false)}
@@ -60,12 +60,12 @@ export const FloatingWhatsApp: React.FC<FloatingWhatsAppProps> = ({ onScrollToQu
       {/* Floating Button with Tooltip */}
       <div className="flex items-center gap-2 group">
         <div className="hidden sm:block opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none bg-[#353026] text-[#faefe0] text-[13px] px-3.5 py-1.5 rounded-lg shadow-lg whitespace-nowrap">
-          Chat with Royalcruise on WhatsApp
+          Chat with Royale cruize on WhatsApp
         </div>
 
         <button
           onClick={() => setShowQuickCard(!showQuickCard)}
-          aria-label="Chat with Royalcruise on WhatsApp"
+          aria-label="Chat with Royale cruize on WhatsApp"
           className="w-14 h-14 rounded-full bg-[#236b45] hover:bg-[#17452F] text-white flex items-center justify-center shadow-lg hover:scale-105 active:scale-95 transition-transform cursor-pointer relative"
         >
           <span className="material-symbols-outlined text-[30px]">chat</span>

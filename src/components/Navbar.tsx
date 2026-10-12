@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { BrandLogo } from './BrandLogo';
 import { WHATSAPP_NUMBER } from '../data/cleaningData';
 import { buildDirectWhatsAppUrl } from '../utils/whatsapp';
 
@@ -59,7 +60,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenQuote, onOpenContact }) =>
     { label: 'FAQs', id: 'faqs-section', key: 'faqs' },
   ];
 
-  const defaultWhatsappUrl = buildDirectWhatsAppUrl('Hello Royalcruise, I would like to inquire about your professional cleaning services.');
+  const defaultWhatsappUrl = buildDirectWhatsAppUrl('Hello Royale cruize, I would like to inquire about your professional cleaning services.');
 
   return (
     <>
@@ -77,15 +78,20 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenQuote, onOpenContact }) =>
               onClick={() => scrollTo('home')}
               className="flex items-center gap-3 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[#236b45] rounded-lg p-1"
             >
+              {/* Previous direct SVG markup retained for easy rollback:
               <img
-                src="https://lh3.googleusercontent.com/aida/AEtjO1WtLzvguGT5d9USfggFhH3SUATUtLSftzlKGu_pgcHmWS6HMCOf3OFfsw7Fkiz3JMlw1nlqIO1Hpl0DYNNJ3qxetuuXj-z3xdF_qiok_RKLYDxFD-wav1JBki2tR2mZuFtDWGvAACMDXZPXaV54NskbztRbRO9CZhDb6HqJWlKDNSfYXKtFXo2tkX_8F22WfB6WDrQyxdOqgjhAghL7L3XEvulrViMm4pY0UcFG1AQXewICfDrjiSZi90o"
-                alt="Royalcruise Cleaning Services Logo"
+                src="../assets/royale-cruize-logo.svg"
+                alt="Royale cruize Cleaning Services Logo"
                 className="h-9 w-auto object-contain"
                 loading="eager"
-              />
+              /> */}
+             
+              <BrandLogo className="h-9 w-auto object-contain" loading="eager" />
+
               <span className="font-heading text-2xl font-bold text-[#17452F] tracking-tight hidden sm:inline-block">
-                Royalcruise
+                Royale cruize
               </span>
+              
             </button>
           </div>
 
@@ -135,7 +141,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenQuote, onOpenContact }) =>
             {/* Contact / Info profile button */}
             <button
               onClick={onOpenContact}
-              title="Contact Royalcruise"
+              title="Contact Royale cruize"
               className="w-9 h-9 rounded-full bg-[#785a00] hover:bg-[#5b4300] text-white flex items-center justify-center transition-colors cursor-pointer"
               aria-label="Contact options"
             >

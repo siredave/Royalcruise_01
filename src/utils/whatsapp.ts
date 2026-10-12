@@ -46,9 +46,13 @@ export function calculateEstimatedQuote(data: QuoteFormData) {
   return { min, max };
 }
 
+function normalizeWhatsAppNumber(phone: string): string {
+  return phone.replace(/\D/g, '');
+}
+
 export function buildWhatsAppQuoteUrl(data: QuoteFormData, customPhone = WHATSAPP_NUMBER): string {
   const lines: string[] = [
-    '✨ *Royalcruise Cleaning Services Quote Inquiry*',
+    '✨ *Royale cruize Cleaning Services Quote Inquiry*',
     '--------------------------------------',
     `📍 *Service:* ${data.service}`,
     `🏠 *Property / Size:* ${data.propertyType}`,
@@ -69,12 +73,12 @@ export function buildWhatsAppQuoteUrl(data: QuoteFormData, customPhone = WHATSAP
   lines.push('--------------------------------------');
   lines.push(`💡 *Estimated Range:* ₦${min.toLocaleString()} – ₦${max.toLocaleString()}`);
   lines.push('');
-  lines.push('Hello Royalcruise team, please review my cleaning requirements and confirm availability!');
+  lines.push('Hello Royale cruize team, please review my cleaning requirements and confirm availability!');
 
   const message = lines.join('\n');
-  return `https://wa.me/${customPhone}?text=${encodeURIComponent(message)}`;
+  return `https://wa.me/${normalizeWhatsAppNumber(customPhone)}?text=${encodeURIComponent(message)}`;
 }
 
 export function buildDirectWhatsAppUrl(text: string, customPhone = WHATSAPP_NUMBER): string {
-  return `https://wa.me/${customPhone}?text=${encodeURIComponent(text)}`;
+  return `https://wa.me/${normalizeWhatsAppNumber(customPhone)}?text=${encodeURIComponent(text)}`;
 }

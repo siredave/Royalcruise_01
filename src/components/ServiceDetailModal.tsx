@@ -16,7 +16,7 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
   if (!service) return null;
 
   const whatsappUrl = buildDirectWhatsAppUrl(
-    `Hello Royalcruise, I am interested in detailed booking for ${service.title}.`
+    `Hello Royale cruize, I am interested in detailed booking for ${service.title}.`
   );
 
   return (

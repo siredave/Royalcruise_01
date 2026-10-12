@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import aboutImage from '../assets/pexels-tima-miroshnichenko-6197122.jpg';
 import { ABOUT_PRINCIPLES } from '../data/cleaningData';
 
 export const AboutSection: React.FC = () => {
@@ -19,13 +20,16 @@ export const AboutSection: React.FC = () => {
                 </div>
               )}
               <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzGeaMFzMV4MEQTNP-jpZHQNRENdUyguvWDpvv4cUNYTHbbWzLaZEzaO8yhGDCaE8e63hFtKClK6937-YW3UgXEga4zksK0B0zQIJ6_eXJhRgaiNrYcLNj5RYb1rTqEU_Hco9WbgUt8mSCZNGjjMCwz_Cv3LGynHxOiVZsVbJ8QfApQwwWuWsHEK54K74dJLLThCcBx5kluEKvmhNaLFh4O9TSHxg0HcpDkaC7ppjS2g6mEWM1SN0Oaw"
-                alt="Black African professional cleaner with a friendly warm smile holding microfiber cloths and specialized cleaning spray in an organized upscale kitchen setting"
-                className={`w-full h-full object-cover transition-opacity duration-500 ${
-                  imageLoaded ? 'opacity-100' : 'opacity-0'
+                src={aboutImage}
+                alt="Professional cleaning team working in a modern home"
+                className={`w-full h-full object-cover object-center transition-all duration-500 ${
+                  imageLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-[1.02]'
                 }`}
                 onLoad={() => setImageLoaded(true)}
                 loading="lazy"
+                width={1200}
+                height={1500}
+                sizes="(max-width: 1024px) 100vw, 480px"
                 referrerPolicy="no-referrer"
               />
             </div>
@@ -45,13 +49,13 @@ export const AboutSection: React.FC = () => {
         {/* Narrative Column */}
         <div className="lg:col-span-7 flex flex-col gap-6 order-1 lg:order-2">
           <span className="text-[13px] font-bold uppercase tracking-widest text-[#236b45]">
-            About Royalcruise
+            About Royale cruize
           </span>
           <h2 className="font-heading text-3xl sm:text-4xl text-[#242820] font-bold leading-tight">
             A Higher Standard of Clean.
           </h2>
           <p className="text-[18px] text-[#626B62] leading-relaxed">
-            At Royalcruise Cleaning Services, we believe a clean environment creates comfort, confidence, and peace of mind. Our approach focuses on dependable service, attention to detail, and creating spaces our customers can feel proud of.
+            At Royale cruize Cleaning Services, we believe a clean environment creates comfort, confidence, and peace of mind. Our approach focuses on dependable service, attention to detail, and creating spaces our customers can feel proud of.
           </p>
 
           {/* Principles List */}

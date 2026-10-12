@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import heroImage from '../assets/pexels-tima-miroshnichenko-6196692.jpg';
 import { buildDirectWhatsAppUrl } from '../utils/whatsapp';
 
 interface HeroSectionProps {
@@ -11,7 +12,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   onScrollToServices,
 }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
-  const whatsappUrl = buildDirectWhatsAppUrl('Hello Royalcruise, I would like to request a free quote for my property.');
+  const whatsappUrl = buildDirectWhatsAppUrl('Hello Royale cruize, I would like to request a free quote for my property.');
 
   return (
     <section id="home" className="w-full relative overflow-hidden bg-[#FAF9F4] py-16 lg:py-24">
@@ -24,7 +25,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               verified
             </span>
             <span className="text-[13px] font-semibold uppercase tracking-wider text-[#785a00]">
-              Royalcruise Cleaning Services
+              Royale cruize Cleaning Services
             </span>
           </div>
 
@@ -93,13 +94,16 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 )}
 
                 <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCx9N3kE2xShv2FQxH0ItwQgzSkqzuOdfGK_O3BisSEJt_0XqukJI4LttNw6uoExnn8onv10H4U1UqKha3hKtr8RuRxMzs015eFnARSxADygcu29FJCbi89McdZZX-rAqoP269PGnArOThIXQL4sijwUw9C01zcnnq-Ls5unO48RmncJz7qw44RpfDeSS5okd76eKDEIEpTIk9JY2Gb8p79sy6xCOjf4BgQMv1aTexRnW6vnn87Ia4hnw"
-                  alt="A cheerful Black African female professional cleaner wearing an elegant dark green apron with gold embroidery, holding eco-safe cleaning supplies inside a bright sunlit luxury apartment living room with modern ivory and natural wood furnishings"
-                  className={`w-full h-full object-cover transition-opacity duration-500 ${
+                  src={heroImage}
+                  alt="Professional cleaning team working in a modern kitchen"
+                  className={`w-full h-full object-cover object-[center_20%] scale-[1.04] transition-opacity duration-500 ${
                     imageLoaded ? 'opacity-100' : 'opacity-0'
                   }`}
                   onLoad={() => setImageLoaded(true)}
                   loading="eager"
+                  width={1200}
+                  height={1500}
+                  sizes="(max-width: 1024px) 100vw, 480px"
                   referrerPolicy="no-referrer"
                 />
               </div>

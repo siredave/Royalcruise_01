@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrandLogo } from './BrandLogo';
 import { buildDirectWhatsAppUrl } from '../utils/whatsapp';
 
 interface FooterProps {
@@ -13,7 +14,7 @@ export const Footer: React.FC<FooterProps> = ({
   onOpenTerms,
 }) => {
   const whatsappUrl = buildDirectWhatsAppUrl(
-    'Hello Royalcruise, I am contacting you through your website footer.'
+    'Hello Royale cruize, I am contacting you through your website footer.'
   );
 
   return (
@@ -23,13 +24,9 @@ export const Footer: React.FC<FooterProps> = ({
           {/* Brand Col */}
           <div className="lg:col-span-2 flex flex-col gap-4 pr-0 lg:pr-6">
             <div className="flex items-center gap-3">
-              <img
-                src="https://lh3.googleusercontent.com/aida/AEtjO1WtLzvguGT5d9USfggFhH3SUATUtLSftzlKGu_pgcHmWS6HMCOf3OFfsw7Fkiz3JMlw1nlqIO1Hpl0DYNNJ3qxetuuXj-z3xdF_qiok_RKLYDxFD-wav1JBki2tR2mZuFtDWGvAACMDXZPXaV54NskbztRbRO9CZhDb6HqJWlKDNSfYXKtFXo2tkX_8F22WfB6WDrQyxdOqgjhAghL7L3XEvulrViMm4pY0UcFG1AQXewICfDrjiSZi90o"
-                alt="Royalcruise Cleaning Services Logo"
-                className="h-9 w-auto object-contain bg-white rounded-md p-1"
-              />
+              <BrandLogo className="h-9 w-auto object-contain bg-white rounded-md p-1" />
               <span className="font-heading text-2xl text-white font-bold tracking-tight">
-                Royalcruise
+                Royale cruize
               </span>
             </div>
 
@@ -162,7 +159,7 @@ export const Footer: React.FC<FooterProps> = ({
 
         {/* Bottom bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[13px] text-white/60">
-          <p>© 2025 Royalcruise Cleaning Services. All rights reserved.</p>
+          <p>© 2025 Royale cruize Cleaning Services. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <button
               onClick={onOpenPrivacy}

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="128" viewBox="0 0 512 128" fill="none">
+  <rect x="16" y="24" width="80" height="80" rx="18" fill="#E8B323"/>
+  <path d="M34 73H78L73 89C72.2 91.6 69.8 93.4 67.1 93.4H45C42.3 93.4 39.9 91.6 39.1 89L34 73Z" fill="#17452F"/>
+  <path d="M38 70.5H74" stroke="#17452F" stroke-width="5" stroke-linecap="round"/>
+  <path d="M44 96.5C50.6 100.2 61.4 100.2 68 96.5" stroke="#17452F" stroke-width="4" stroke-linecap="round"/>
+  <path d="M31 48.5L33.8 55.2L40.5 58L33.8 60.8L31 67.5L28.2 60.8L21.5 58L28.2 55.2L31 48.5Z" fill="#fff"/>
+  <path d="M65 35L68.3 42.7L76 46L68.3 49.3L65 57L61.7 49.3L54 46L61.7 42.7L65 35Z" fill="#fff"/>
+  <circle cx="47" cy="45" r="3.5" fill="#fff"/>
+  <circle cx="53" cy="57" r="2.8" fill="#fff"/>
+
+  <text
+    x="116"
+    y="68"
+    font-family="Arial, sans-serif"
+    font-size="32"
+    font-weight="700"
+    letter-spacing=".5"
+  ><tspan fill="#17452F">ROYALE</tspan><tspan dx="7" fill="#E8B323">CRUIZE</tspan></text>
+  <text
+    x="117"
+    y="94"
+    fill="#626862"
+    font-family="Arial, sans-serif"
+    font-size="12"
+    font-weight="700"
+    letter-spacing="4"
+  >CLEANING SERVICES</text>
+</svg>

@@ -1,6 +1,6 @@
 import { ServiceItem, FaqItem, TestimonialItem } from '../types';
 
-export const WHATSAPP_NUMBER = '2348000000000'; // Standard Nigerian international format (+234)
+export const WHATSAPP_NUMBER = '2348084241251'; // Standard Nigerian international format (+234)
 
 export const SERVICES_DATA: ServiceItem[] = [
   {
@@ -18,7 +18,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       'Flexible after-hours or early morning scheduling'
     ],
     durationEstimate: '2 – 4 hours per visit',
-    whatsappMessage: 'Hello Royalcruise, I am inquiring about Office & Commercial Cleaning for our workspace.'
+    whatsappMessage: 'Hello Royale cruize, I am inquiring about Office & Commercial Cleaning for our workspace.'
   },
   {
     id: 'house-cleaning',
@@ -35,7 +35,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       'Bed linen change & bedroom decluttering'
     ],
     durationEstimate: '3 – 5 hours per visit',
-    whatsappMessage: 'Hello Royalcruise, I am inquiring about House & Residential Cleaning.'
+    whatsappMessage: 'Hello Royale cruize, I am inquiring about House & Residential Cleaning.'
   },
   {
     id: 'relocation-cleaning',
@@ -52,7 +52,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       'Deposit refund guarantee standard compliance'
     ],
     durationEstimate: '5 – 7 hours per turnover',
-    whatsappMessage: 'Hello Royalcruise, I am inquiring about Relocation (Move-In / Move-Out) Cleaning.'
+    whatsappMessage: 'Hello Royale cruize, I am inquiring about Relocation (Move-In / Move-Out) Cleaning.'
   },
   {
     id: 'deep-cleaning',
@@ -69,7 +69,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       'Ceiling fan blades & air vent cover dust extraction'
     ],
     durationEstimate: '6 – 8 hours per session',
-    whatsappMessage: 'Hello Royalcruise, I am inquiring about Specialized Deep Cleaning.'
+    whatsappMessage: 'Hello Royale cruize, I am inquiring about Specialized Deep Cleaning.'
   }
 ];
 
@@ -77,8 +77,8 @@ export const FAQS_DATA: FaqItem[] = [
   {
     id: 'faq-1',
     category: 'services',
-    question: 'What cleaning services does Royalcruise offer?',
-    answer: 'Royalcruise offers four core professional services: Office & Commercial Cleaning, House & Residential Cleaning, Relocation (Move-In / Move-Out) Cleaning, and intensive Deep Cleaning. All packages are customizable to suit individual property requirements.'
+    question: 'What cleaning services does Royale cruize offer?',
+    answer: 'Royale cruize offers four core professional services: Office & Commercial Cleaning, House & Residential Cleaning, Relocation (Move-In / Move-Out) Cleaning, and intensive Deep Cleaning. All packages are customizable to suit individual property requirements.'
   },
   {
     id: 'faq-2',
@@ -133,7 +133,7 @@ export const TESTIMONIALS_DATA: TestimonialItem[] = [
   },
   {
     id: 'test-3',
-    quote: 'Relocating is stressful enough, but Royalcruise made the handover completely seamless. The landlord was genuinely impressed with the condition of the apartment and released the security deposit with zero deductions.',
+    quote: 'Relocating is stressful enough, but Royale cruize made the handover completely seamless. The landlord was genuinely impressed with the condition of the apartment and released the security deposit with zero deductions.',
     service: 'Relocation Cleaning',
     accentColor: 'gold'
   }

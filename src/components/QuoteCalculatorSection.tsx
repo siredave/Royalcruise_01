@@ -48,7 +48,7 @@ export const QuoteCalculatorSection: React.FC<QuoteCalculatorSectionProps> = ({
 
   const handleCopySummary = () => {
     const lines = [
-      'Royalcruise Cleaning Services Quote Summary',
+      'Royale cruize Cleaning Services Quote Summary',
       `Service: ${service}`,
       `Property: ${propertyType}`,
       `Location: ${location || 'To be specified'}`,

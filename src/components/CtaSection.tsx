@@ -3,7 +3,7 @@ import { buildDirectWhatsAppUrl } from '../utils/whatsapp';
 
 export const CtaSection: React.FC = () => {
   const whatsappUrl = buildDirectWhatsAppUrl(
-    'Hello Royalcruise, I am ready to experience a cleaner space. Let\'s discuss my service requirements.'
+    'Hello Royale cruize, I am ready to experience a cleaner space. Let\'s discuss my service requirements.'
   );
 
   return (

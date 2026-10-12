@@ -30,7 +30,7 @@ export const LegalModal: React.FC<LegalModalProps> = ({ type, onClose }) => {
           {isPrivacy ? (
             <>
               <p>
-                At <strong>Royalcruise Cleaning Services</strong>, we value the trust you place in us when inviting our team into your home or commercial workspace.
+                At <strong>Royale cruize Cleaning Services</strong>, we value the trust you place in us when inviting our team into your home or commercial workspace.
               </p>
               <h4 className="font-bold text-[#242820]">1. Information We Collect</h4>
               <p>
@@ -48,7 +48,7 @@ export const LegalModal: React.FC<LegalModalProps> = ({ type, onClose }) => {
           ) : (
             <>
               <p>
-                Welcome to <strong>Royalcruise Cleaning Services</strong>. By engaging our services, you agree to the following operational standards.
+                Welcome to <strong>Royale cruize Cleaning Services</strong>. By engaging our services, you agree to the following operational standards.
               </p>
               <h4 className="font-bold text-[#242820]">1. Scope of Work</h4>
               <p>

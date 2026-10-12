@@ -14,7 +14,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
 }) => {
   if (!isOpen) return null;
 
-  const whatsappUrl = buildDirectWhatsAppUrl('Hello Royalcruise, I would like to get in touch with your team.');
+  const whatsappUrl = buildDirectWhatsAppUrl('Hello Royale cruize, I would like to get in touch with your team.');
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-xs animate-in fade-in duration-200">
@@ -25,7 +25,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
               <span className="material-symbols-outlined text-[20px]">support_agent</span>
             </div>
             <div>
-              <h3 className="font-heading text-lg font-bold text-[#242820]">Royalcruise Direct Care</h3>
+              <h3 className="font-heading text-lg font-bold text-[#242820]">Royale cruize Direct Care</h3>
               <p className="text-[12px] text-[#626B62]">Available Mon – Sat, 7am – 7pm</p>
             </div>
           </div>
