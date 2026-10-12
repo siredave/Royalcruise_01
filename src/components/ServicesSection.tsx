@@ -100,7 +100,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-1 text-[#236b45] hover:text-[#17452F] text-[14px] font-semibold transition-colors group/link"
                       >
-                        <span>Inquire on WhatsApp</span>
+                        <span>Request a Quote</span>
                         <span className="material-symbols-outlined text-[18px] group-hover/link:translate-x-1 transition-transform">
                           arrow_forward
                         </span>
